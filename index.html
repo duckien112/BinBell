@@ -49,7 +49,18 @@
 		</style>      
     </head>
     <body>
-        
+	
+        <div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&appId=601345959986530&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+
         <table width="300" border="0" align="center" cellpadding="0" cellspacing="0">
             
             <tbody>	
@@ -64,7 +75,30 @@
 				
 				<tr>
 					<td>
-						<a href="https://plus.google.com/117673448725108144334" rel="publisher">Google+</a>
+						<div class="fb-follow" data-href="https://www.facebook.com/BinBell.org" data-colorscheme="light" data-layout="button" data-show-faces="true"></div>
+					</td>
+					
+					<td>
+						<div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/117673448725108144334" data-rel="publisher"></div>
+					</td>
+					
+					<td>
+						<a class="twitter-follow-button"
+						  href="https://twitter.com/BinBell_com"
+						  data-show-count="false"
+						  data-lang="en">
+						Follow @BinBell_com
+						</a>
+						<script type="text/javascript">
+						window.twttr = (function (d, s, id) {
+						  var t, js, fjs = d.getElementsByTagName(s)[0];
+						  if (d.getElementById(id)) return;
+						  js = d.createElement(s); js.id = id;
+						  js.src= "https://platform.twitter.com/widgets.js";
+						  fjs.parentNode.insertBefore(js, fjs);
+						  return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+						}(document, "script", "twitter-wjs"));
+						</script>
 					</td>
 				</tr>
 				
