@@ -4,7 +4,8 @@
     <title>Bin Bell</title>
 	
 	<script>
-		document.write(navigator.userAgent);
+	if(navigator.userAgent.match(/Windows Phone/i))
+		document.write("Windows Phone");
 	</script>
 	
 </head>
