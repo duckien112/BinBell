@@ -4,7 +4,13 @@
     <title>Bin Bell</title>
 	
 	<script>
-	if(navigator.userAgent.match(/Windows Phone/i))
+	if(		navigator.userAgent.match(/Android/i))
+		document.write("Android");
+	else if(navigator.userAgent.match(/iPhone/i)
+		|| navigator.userAgent.match(/iPad/i)
+		|| navigator.userAgent.match(/iPod/i))
+		document.write("iOS");
+	else if(navigator.userAgent.match(/Windows Phone/i))
 		document.write("Windows Phone");
 	</script>
 	
