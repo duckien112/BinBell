@@ -16,6 +16,28 @@
 </script>
 
 <script>
+	function go_iOS() {
+		//window.location = "https://itunes.apple.com/app/id963942334";
+		alertComingSoon("iOS");
+	}
+
+	function go_Android() {
+		window.location = "https://play.google.com/store/apps/details?id=com.binbell.ball";
+	}
+
+	function go_Wp8() {
+		window.location = "http://www.windowsphone.com/s?appid=fa39b656-fec3-4ae9-8f7b-592ab55749a4";
+	}
+
+	if(		navigator.userAgent.match(/Android/i))
+		go_Android();
+	else if(navigator.userAgent.match(/iPhone/i)
+		|| navigator.userAgent.match(/iPad/i)
+		|| navigator.userAgent.match(/iPod/i))
+		go_iOS();
+	else if(navigator.userAgent.match(/Windows Phone/i))
+		go_Wp8();
+		
 	function alertComingSoon(a){
 		alert("The game on "+a+" is coming soon. Visit our official site at http://binbell.com and follow us on Twitter, Facebook, Google+ to get more info about all our upcoming titles")
 	}
