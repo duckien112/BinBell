@@ -16,9 +16,30 @@
 </script>
 
 <script>
-	function alertComingSoon(a){
-		alert("The game on "+a+" is coming soon. Visit our official site at http://binbell.com and follow us on Twitter, Facebook, Google+ to get more info about all our upcoming titles")
-	}
+function alertComingSoon(a){
+	alert("The game on "+a+" is coming soon. Visit our official site at http://binbell.com and follow us on Twitter, Facebook, Google+ to get more info about all our upcoming titles")
+}
+function go_iOS() {
+	alertComingSoon("iOS");
+	//window.location = "https://itunes.apple.com/app/id960322613";
+	
+}
+
+function go_Android() {
+	window.location = "https://play.google.com/store/apps/details?id=com.binbell.number";
+}
+
+function go_Wp8() {
+	window.location = "http://www.windowsphone.com/s?appid=14def52c-bb7c-4c2e-9cce-7df0a4ba9244";
+}
+if(		navigator.userAgent.match(/Android/i))
+	go_Android();
+else if(navigator.userAgent.match(/iPhone/i)
+	|| navigator.userAgent.match(/iPad/i)
+	|| navigator.userAgent.match(/iPod/i))
+	go_iOS();
+else if(navigator.userAgent.match(/Windows Phone/i))
+	go_Wp8();
 </script>
 
 <title>Number Racing - Bin Bell</title>
@@ -83,8 +104,8 @@ a:hover {  color: #17a554}
 			
 			<tr>
 				<td>
-					<!--<a href="https://itunes.apple.com/app/id960322613">-->
 					<a href='javascript:alertComingSoon("iOS")'>
+					<!--<a href='javascript:go_iOS()'>-->
 						<img src="images/qr_ios.png" alt="Number Racing">
 						<h1>iOS</h1>
 					</a>
@@ -93,7 +114,7 @@ a:hover {  color: #17a554}
 			
 			<tr>
 				<td>
-					<a href="https://play.google.com/store/apps/details?id=com.binbell.number">
+					<a href='javascript:go_Android()'>
 						<img src="images/qr_android.png" alt="Number Racing">
 						<h1>Android</h1>
 					</a>
@@ -102,7 +123,7 @@ a:hover {  color: #17a554}
 			
 			<tr>
 				<td>
-					<a href="http://www.windowsphone.com/s?appid=14def52c-bb7c-4c2e-9cce-7df0a4ba9244">
+					<a href='javascript:go_Wp8()'>
 						<img src="images/qr_wp.png" alt="Number Racing">
 						<h1>Windows Phone</h1>
 					</a>
