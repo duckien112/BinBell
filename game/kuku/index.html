@@ -68,73 +68,71 @@ else if(navigator.userAgent.match(/Windows Phone/i))
 <meta name="twitter:description" content="Test your eye! Find the different cube!">
 <meta name="twitter:image:src" content="http://binbell.com/game/kuku/meta/og_images.png">
 <meta name="twitter:domain" content="binbell.com">
+<style>
+body{
+	background-color: #111932;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+a:active {  color: #FFFFFF; text-decoration: none}
+a:link {  color: #FFFFFF; text-decoration: none}
+a:visited {  color: #FFFFFF; text-decoration: none}
+a:hover {  color: #17a554}
+
+</style>
 </head>
 <body>
-<div style="display:none"></div>
+<table width="300" border="0" align="center" cellpadding="0" cellspacing="0">
+            
+		<tbody>	
+			
+			<tr>
+				<td>
+					<img src="images/banner.png" alt="Kuku Kube" vspace="20">						
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<h2>Test your eye! Find the different cube!</h2>						
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<a href='javascript:go_iOS()'>
+						<img src="images/qr_ios.png" alt="Kuku Kube">
+						<h1>iOS</h1>
+					</a>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<a href='javascript:go_Android()'>
+						<img src="images/qr_android.png" alt="Kuku Kube">
+						<h1>Android</h1>
+					</a>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<a href='javascript:go_Wp8()'>
+						<img src="images/qr_wp.png" alt="Kuku Kube">
+						<h1>Windows Phone</h1>
+					</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<div id="copyright" align="center" vspace="20"><a href="http://binbell.com/">© Bin Bell</a></div>
+				</td>
+			</tr>
+				
+        </tbody>
+	</table>
 </body>
 </html>
-<script id="tpl" type="text/html">
-<div class="grid">
-	<div class="page hide" id="loading">
-		<%=loading%>
-	</div>
-	<div class="page hide" id="index">
-		<h1><%=title%></h1>
-
-		<div id="help"><%=help_txt%></div>
-		<div class="btns">
-			<button data-type="color" class="btn play-btn">
-				<%=btn_start%>
-			</button>
-		</div>
-	</div>
-	<div class="page hide" id="room">
-		<header>
-			<span class="lv">
-				<%=score%>
-				<em>
-					1
-				</em>
-			</span>
-			<span class="time">
-			</span>
-			<span class="btn btn-pause">
-				<%=btn_pause%>
-			</span>
-		</header>
-		<div id="box" class="lv1">
-		</div>
-			
-	</div>
-	<div class="page hide" id="dialog">
-		<div class="inner">
-			<div class="content gameover">
-				<div class="inner-content">
-
-					<h3></h3>
-					<div class="btn-wrap">
-						<button class="btn btn-restart">
-							<%=btn_reTry%>
-						</button>
-					</div>
-				</div>
-			   
-			</div>
-			<div class="content pause">
-				<div class="inner-content">
-				  
-					<h3>
-						<%=game_pause%>
-					</h3>
-					<div class="btn-wrap">
-						<button class="btn btn-resume">
-							<%=btn_resume%>
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-</script><script src="js/libs.min.js"></script>
-<script src="js/main.min.js"></script>
