@@ -15,6 +15,36 @@
 
 </script>
 
+<script>
+function alertComingSoon(store) {
+	
+	alert("The game on " + store + " is coming soon. Visit our official site at http://binbell.com and follow us on Twitter, Facebook, Google+ to get more info about all our upcoming titles");
+}
+
+function go_iOS() {
+	alertComingSoon("iOS");
+	//window.location = "";
+	
+}
+
+function go_Android() {
+	window.location = "https://play.google.com/store/apps/details?id=com.binbell.piano";
+}
+
+function go_Wp8() {
+	alertComingSoon("Windows Phone");
+	window.location = "";
+}
+if(		navigator.userAgent.match(/Android/i))
+	go_Android();
+else if(navigator.userAgent.match(/iPhone/i)
+	|| navigator.userAgent.match(/iPad/i)
+	|| navigator.userAgent.match(/iPod/i))
+	go_iOS();
+else if(navigator.userAgent.match(/Windows Phone/i))
+	go_Wp8();
+</script>
+
 <title>Piano Racing - Bin Bell</title>
 
 <link rel="shortcut icon" href="favicon.ico" />
@@ -71,7 +101,7 @@ a:hover {  color: #17a554}
 			
 			<tr>
 				<td>
-					<a href="https://play.google.com/store/apps/details?id=com.binbell.piano">
+					<a href='javascript:go_Android()'>
 						<img src="images/qr.png" alt="Piano Racing">
 						<h1>Android</h1>
 					</a>
