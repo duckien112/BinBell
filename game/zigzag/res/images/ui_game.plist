@@ -7,7 +7,7 @@
 			<key>bg_game.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,0},{640,960}}</string>
+				<string>{{641,0},{640,960}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -21,7 +21,7 @@
 			<key>bg_menu.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{641,0},{640,960}}</string>
+				<string>{{0,0},{640,960}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -49,7 +49,7 @@
 			<key>btn_connect.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{502,1201},{150,60}}</string>
+				<string>{{201,1080},{150,60}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -63,7 +63,7 @@
 			<key>btn_invite.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{352,1080},{150,60}}</string>
+				<string>{{653,1201},{150,60}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -91,7 +91,7 @@
 			<key>btn_like.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{653,1201},{150,60}}</string>
+				<string>{{351,1202},{150,60}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -105,7 +105,7 @@
 			<key>btn_logout.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{201,1080},{150,60}}</string>
+				<string>{{351,1141},{150,60}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -133,7 +133,7 @@
 			<key>btn_rate.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{351,1141},{150,61}}</string>
+				<string>{{502,1201},{150,61}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -147,7 +147,7 @@
 			<key>btn_share.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{351,1203},{150,60}}</string>
+				<string>{{352,1080},{150,60}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -235,7 +235,7 @@
 			<key>format</key>
 			<integer>2</integer>
 			<key>size</key>
-			<string>{1282,1264}</string>
+			<string>{1282,1263}</string>
 			<key>textureFileName</key>
 			<string>ui_game.png</string>
 			</dict>
