@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Zigzag Ninja - Bin Bell</title>
+    <link rel="icon" type="image/GIF" href="res/favicon.ico"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+	
+	<script>
+		function alertComingSoon(store) {
+			
+			alert("The game on " + store + " is coming soon. Visit our official site at http://binbell.com and follow us on Twitter, Facebook, Google+ to get more info about all our upcoming titles");
+		}
+
+		function go_iOS() {
+			window.location = "https://itunes.apple.com/app/id1030665723";
+			
+		}
+
+		function go_Android() {
+			window.location = "https://play.google.com/store/apps/details?id=com.bluebirdaward.zigzag";
+		}
+
+		function go_Wp8() {
+			//window.location = "http://goo.gl/JKUUgT";
+			alertComingSoon("Windows Phone");
+		}
+		if(		navigator.userAgent.match(/Android/i))
+			go_Android();
+		else if(navigator.userAgent.match(/iPhone/i)
+			|| navigator.userAgent.match(/iPad/i)
+			|| navigator.userAgent.match(/iPod/i))
+			go_iOS();
+		else if(navigator.userAgent.match(/Windows Phone/i))
+			go_Wp8();
+	</script>
+
+	<meta property="og:title" content="Zigzag Ninja game on iOS, Android"/>
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Zigzag Ninja game on iOS, Android"/>
+	<meta property="og:description" content="Simple and Addictive! Tap to change direction of the ninja. Try to avoid the wall. How long can you run?"/>
+	<meta property="og:image" content="http://binbell.com/game/zigzag/meta/og_image.png"/>
+
+	<meta property="title" content="Zigzag Ninja game on iOS, Android"/>
+	<meta property="type" content="website" />
+	<meta property="site_name" content="Zigzag Ninja game on iOS, Android"/>
+	<meta property="description" content="Simple and Addictive! Tap to change direction of the ninja. Try to avoid the wall. How long can you run?"/>
+	<meta property="image" content="http://binbell.com/game/zigzag/meta/og_image.png"/>
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Zigzag Ninja game on iOS, Android">
+	<meta name="twitter:description" content="Simple and Addictive! Tap to change direction of the ninja. Try to avoid the wall. How long can you run?">
+	<meta name="twitter:image:src" content="http://binbell.com/game/zigzag/meta/og_image.png">
+	<meta name="twitter:domain" content="binbell.com">
+</head>
+<body style="background-image: url('bg_body.gif');background-color: #cccccc;">
+<canvas id="gameCanvas" width="1" height="1"></canvas>
+
+<script cocos src="game.min.js"></script>
+</body>
+</html>
