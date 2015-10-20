@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Can you tap 20/10? - Bin Bell</title>
+    <link rel="icon" type="image/GIF" href="res/favicon.ico"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+
+	<script>
+	function alertComingSoon(store) {
+		
+		alert("The game on " + store + " is coming soon. Visit our official site at http://binbell.com and follow us on Twitter, Facebook, Google+ to get more info about all our upcoming titles");
+	}
+
+	function go_iOS() {
+		//alertComingSoon("iOS");
+		window.location = "https://itunes.apple.com/app/id1045835643";
+		
+	}
+
+	function go_Android() {
+		//https://play.google.com/store/apps/details?id=com.binbell.kuku
+		window.location = "https://play.google.com/store/apps/details?id=com.binbell.tap00";
+	}
+
+	function go_Wp8() {
+		//http://www.windowsphone.com/s?appid=39a198d7-7a03-4b01-9a97-389a8a31e726
+		window.location = "http://goo.gl/JKUUgT";
+	}
+	if(		navigator.userAgent.match(/Android/i))
+		go_Android();
+	else if(navigator.userAgent.match(/iPhone/i)
+		|| navigator.userAgent.match(/iPad/i)
+		|| navigator.userAgent.match(/iPod/i))
+		go_iOS();
+	else if(navigator.userAgent.match(/Windows Phone/i))
+		go_Wp8();
+	</script>
+
+	<meta property="og:title" content="Can you tap 20/10? - Web - iOS - Android"/>
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Can you tap 20/10? - Web - iOS - Android"/>
+	<meta property="og:description" content="Can you tap 20/10? Are you fast enough? Play and beat your friends if you can!"/>
+	<meta property="og:image" content="http://binbell.com/game/tap2010/meta/og_image.png"/>
+
+	<meta property="title" content="Can you tap 20/10? - Web - iOS - Android"/>
+	<meta property="site_name" content="Can you tap 20/10? - Web - iOS - Android"/>
+	<meta property="description" content="Can you tap 20/10? Are you fast enough? Play and beat your friends if you can!"/>
+	<meta property="image" content="http://binbell.com/game/tap2010/meta/og_image.png"/>
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Can you tap 20/10? - Web - iOS - Android">
+	<meta name="twitter:description" content="Can you tap 20/10? Are you fast enough? Play and beat your friends if you can!">
+	<meta name="twitter:image:src" content="http://binbell.com/game/tap2010/meta/og_image.png">
+	<meta name="twitter:domain" content="binbell.com">
+</head>
+<body style="background-image: url('bg_body.gif');background-color: #cccccc;">
+<canvas id="gameCanvas" width="1" height="1">Can you tap 20/10? Are you fast enough? Play and beat your friends if you can!</canvas>
+
+<script cocos src="game.min.js"></script>
+</body>
+</html>
