@@ -1,0 +1,1 @@
+{"showFPS": false, "plugin-facebook": ["external/pluginx/platform/facebook_sdk.js", "external/pluginx/platform/facebook.js"], "plugin": {"facebook": {"version": "v2.5", "xfbml": true, "appId": "156152844736869"}}, "frameRate": 60, "project_type": "javascript", "debugMode": 0, "renderMode": 0, "pluginx": ["core", "external/pluginx/Plugin.js"], "id": "gameCanvas"}

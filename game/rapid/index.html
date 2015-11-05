@@ -1,93 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
 
-<meta charset="UTF-8">
+    <script>
+        function alertComingSoon(a){
+            alert("The game on "+a+" is coming soon. Visit our official site at http://binbell.com and follow us on Twitter, Facebook, Google+ to get more info about all our upcoming titles")
+        }
+        function go_iOS() {
+            //alertComingSoon("iOS");
+            window.location = "https://itunes.apple.com/app/id1053458536";
 
-<script>
-function alertComingSoon(a){
-	alert("The game on "+a+" is coming soon. Visit our official site at http://binbell.com and follow us on Twitter, Facebook, Google+ to get more info about all our upcoming titles")
-}
-function go_iOS() {
-	//alertComingSoon("iOS");
-	window.location = "https://itunes.apple.com/app/id1053458536";
-	
-}
+        }
 
-function go_Android() {
-	//alertComingSoon("Android");
-	window.location = "https://play.google.com/store/apps/details?id=com.binbell.rapid";
-}
+        function go_Android() {
+            //alertComingSoon("Android");
+            window.location = "https://play.google.com/store/apps/details?id=com.binbell.rapid";
+        }
 
-function go_Wp8() {
-	//alertComingSoon("Windows Phone");
-	window.location = "http://www.windowsphone.com/s?appid=b1f84677-a053-4354-9ebc-e44c0f6d6609";
-}
-if(		navigator.userAgent.match(/Android/i))
-	go_Android();
-else if(navigator.userAgent.match(/iPhone/i)
-	|| navigator.userAgent.match(/iPad/i)
-	|| navigator.userAgent.match(/iPod/i))
-	go_iOS();
-else if(navigator.userAgent.match(/Windows Phone/i))
-	go_Wp8();
-</script>
+        function go_Wp8() {
+            //alertComingSoon("Windows Phone");
+            window.location = "http://www.windowsphone.com/s?appid=b1f84677-a053-4354-9ebc-e44c0f6d6609";
+        }
+        if(		navigator.userAgent.match(/Android/i))
+            go_Android();
+        else if(navigator.userAgent.match(/iPhone/i)
+                || navigator.userAgent.match(/iPad/i)
+                || navigator.userAgent.match(/iPod/i))
+            go_iOS();
+        else if(navigator.userAgent.match(/Windows Phone/i))
+            go_Wp8();
+    </script>
 
-<title>1990s Rapid Roll - Bin Bell</title>
+    <title>1990s Rapid Roll - Bin Bell</title>
+    <link rel="icon" type="image/GIF" href="res/favicon.ico"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
 
-<link rel="shortcut icon" href="favicon.ico" />
-<meta name="viewport" content="width=320, target-densitydpi=160dpi, initial-scale=0.65, user-scalable=no, minimal-ui">
-  
-<meta property="og:title" content="1990s Rapid Roll play on iOS, Android, Windows Phone"/>
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="1990s Rapid Roll play on iOS, Android, Windows Phone"/>
-<meta property="og:description" content="Test your reflexes! Touch left or the right side of the screen to move and jump down."/>
-<meta property="og:image" content="http://binbell.com/game/rapid/meta/og_images.png"/>
+    <meta property="og:title" content="1990s Rapid Roll play on iOS, Android, Windows Phone"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="1990s Rapid Roll play on iOS, Android, Windows Phone"/>
+    <meta property="og:description" content="Test your reflexes! Touch left or the right side of the screen to move and jump down."/>
+    <meta property="og:image" content="http://binbell.com/game/rapid/meta/og_images.png"/>
 
-<meta property="title" content="1990s Rapid Roll play on iOS, Android, Windows Phone"/>
-<meta property="site_name" content="1990s Rapid Roll play on iOS, Android, Windows Phone"/>
-<meta property="description" content="Test your reflexes! Touch left or the right side of the screen to move and jump down."/>
-<meta property="image" content="http://binbell.com/game/rapid/meta/og_images.png"/>
+    <meta property="title" content="1990s Rapid Roll play on iOS, Android, Windows Phone"/>
+    <meta property="site_name" content="1990s Rapid Roll play on iOS, Android, Windows Phone"/>
+    <meta property="description" content="Test your reflexes! Touch left or the right side of the screen to move and jump down."/>
+    <meta property="image" content="http://binbell.com/game/rapid/meta/og_images.png"/>
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="1990s Rapid Roll play on iOS, Android, Windows Phone">
-<meta name="twitter:description" content="Test your reflexes! Touch left or the right side of the screen to move and jump down.">
-<meta name="twitter:image:src" content="http://binbell.com/game/rapid/meta/og_images.png">
-<meta name="twitter:domain" content="binbell.com">
-
-<style>
-body{
-	background-color: #111932;
-	color: #FFFFFF;
-	text-align: center;
-}
-
-a:active {  color: #FFFFFF; text-decoration: none}
-a:link {  color: #FFFFFF; text-decoration: none}
-a:visited {  color: #FFFFFF; text-decoration: none}
-a:hover {  color: #17a554}
-
-</style>
-
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="1990s Rapid Roll play on iOS, Android, Windows Phone">
+    <meta name="twitter:description" content="Test your reflexes! Touch left or the right side of the screen to move and jump down.">
+    <meta name="twitter:image:src" content="http://binbell.com/game/rapid/meta/og_images.png">
+    <meta name="twitter:domain" content="binbell.com">
 </head>
-<body>
-	<table width="300" border="0" align="center" cellpadding="0" cellspacing="0">
-            
-		<tbody>	
-			
-			<tr>
-				<td>
-					<img src="images/banner.png" alt="<== & ==>" vspace="20">						
-				</td>
-			</tr>
-			
-			<tr>
-				<td>
-					<h2>Test your reflexes! Touch left or the right side of the screen to move and jump down.</h2>						
-				</td>
-			</tr>
-				
-        </tbody>
-	</table>
+<body style="background-image: url('bg_body.gif');background-color: #cccccc;">
+<canvas id="gameCanvas" width="1" height="1"></canvas>
+
+<script cocos src="game.min.js"></script>
 </body>
 </html>
