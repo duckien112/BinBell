@@ -2,6 +2,38 @@
 <html>
 	<head>
 		<script>
+		function alertComingSoon(store) {
+			
+			alert("The game on " + store + " is coming soon. Visit our official site at http://binbell.com and follow us on Twitter, Facebook, Google+ to get more info about all our upcoming titles");
+		}
+
+		function go_iOS() {
+			//alertComingSoon("iOS");
+			//https://itunes.apple.com/app/id976058006
+			window.location = "https://itunes.apple.com/developer/id934871059";
+			
+		}
+
+		function go_Android() {
+			//https://play.google.com/store/apps/details?id=com.binbell.kuku
+			window.location = "https://play.google.com/store/apps/developer?id=Bin+Bell";
+		}
+
+		function go_Wp8() {
+			//http://www.windowsphone.com/s?appid=39a198d7-7a03-4b01-9a97-389a8a31e726
+			//window.location = "http://goo.gl/JKUUgT";
+		}
+		if(		navigator.userAgent.match(/Android/i))
+			go_Android();
+		else if(navigator.userAgent.match(/iPhone/i)
+			|| navigator.userAgent.match(/iPad/i)
+			|| navigator.userAgent.match(/iPod/i))
+			go_iOS();
+		else if(navigator.userAgent.match(/Windows Phone/i))
+			go_Wp8();
+		</script>
+		
+		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
