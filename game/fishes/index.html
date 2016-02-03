@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Feeding Fish Frenzy</title>
+    <link rel="icon" type="image/GIF" href="res/favicon.ico"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+	
+	<meta property="og:title" content="Feeding Fish Frenzy play on iOS, Android, Windows Phone"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Feeding Fish Frenzy play on iOS, Android, Windows Phone"/>
+    <meta property="og:description" content="Feeding Fish Frenzy is a classic game or genre and content suitable for all ages"/>
+    <meta property="og:image" content="http://binbell.com/game/fishes/meta/og_images.png"/>
+
+    <meta property="title" content="Feeding Fish Frenzy play on iOS, Android, Windows Phone"/>
+    <meta property="site_name" content="Feeding Fish Frenzy play on iOS, Android, Windows Phone"/>
+    <meta property="description" content="Feeding Fish Frenzy is a classic game or genre and content suitable for all ages"/>
+    <meta property="image" content="http://binbell.com/game/fishes/meta/og_images.png"/>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Feeding Fish Frenzy play on iOS, Android, Windows Phone">
+    <meta name="twitter:description" content="Feeding Fish Frenzy is a classic game or genre and content suitable for all ages">
+    <meta name="twitter:image:src" content="http://binbell.com/game/fishes/meta/og_images.png">
+    <meta name="twitter:domain" content="binbell.com">
+	
+	<script>
+		function alertComingSoon(store) {
+			
+			alert("The game on " + store + " is coming soon.");
+		}
+
+		function go_iOS() {
+			window.location = "https://itunes.apple.com/app/id1080686028";
+			
+		}
+
+		function go_Android() {
+			window.location = "https://play.google.com/store/apps/details?id=com.binbell.fishes";
+		}
+
+		function go_Wp8() {
+			alertComingSoon("Windows Phone");
+		}
+		if(		navigator.userAgent.match(/Android/i))
+			go_Android();
+		else if(navigator.userAgent.match(/iPhone/i)
+			|| navigator.userAgent.match(/iPad/i)
+			|| navigator.userAgent.match(/iPod/i))
+			go_iOS();
+		else if(navigator.userAgent.match(/Windows Phone/i))
+			go_Wp8();
+	</script>
+    <style>
+        body, canvas, div {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -khtml-user-select: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+    </style>
+</head>
+<body style="padding:0; margin: 0; background: #000;">
+<script src="res/loading.js"></script>
+<canvas id="gameCanvas" width="800" height="450"></canvas>
+
+<script cocos src="game.min.js"></script>
+</body>
+</html>
