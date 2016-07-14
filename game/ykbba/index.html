@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <script>
+        function alertComingSoon(a){
+            alert("The game on "+a+" is coming soon. Visit our official site at http://binbell.com and follow us on Twitter, Facebook, Google+ to get more info about all our upcoming titles")
+        }
+        function go_iOS() {
+            //alertComingSoon("iOS");
+            window.location = "https://itunes.apple.com/app/id1134431432";
+
+        }
+
+        function go_Android() {
+            //alertComingSoon("Android");
+            window.location = "https://play.google.com/store/apps/details?id=com.bluebirdaward.yk";
+        }
+
+        function go_Wp8() {
+            alertComingSoon("Windows Phone");
+            //window.location = "http://www.windowsphone.com/s?appid=b1f84677-a053-4354-9ebc-e44c0f6d6609";
+        }
+        if(		navigator.userAgent.match(/Android/i))
+            go_Android();
+        else if(navigator.userAgent.match(/iPhone/i)
+                || navigator.userAgent.match(/iPad/i)
+                || navigator.userAgent.match(/iPod/i))
+            go_iOS();
+        else if(navigator.userAgent.match(/Windows Phone/i))
+            go_Wp8();
+    </script>
+
+    <title>YK Puzzle - Bin Bell</title>
+    <link rel="icon" type="image/GIF" href="res/favicon.ico"/>
+    <meta name="viewport" content="initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+
+    <meta property="og:title" content="YK Puzzle - The puzzle of 2016"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="YK Puzzle - The puzzle of 2016"/>
+    <meta property="og:description" content="YK Puzzle - The combination of puzzle and music, science and romance."/>
+    <meta property="og:image" content="http://binbell.com/game/ykbba/meta/og_image.png"/>
+
+    <meta property="title" content="YK Puzzle - The puzzle of 2016"/>
+    <meta property="site_name" content="YK Puzzle - The puzzle of 2016"/>
+    <meta property="description" content="YK Puzzle - The combination of puzzle and music, science and romance."/>
+    <meta property="image" content="http://binbell.com/game/ykbba/meta/og_image.png"/>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="YK Puzzle - The puzzle of 2016">
+    <meta name="twitter:description" content="YK Puzzle - The combination of puzzle and music, science and romance.">
+    <meta name="twitter:image:src" content="http://binbell.com/game/ykbba/meta/og_image.png">
+    <meta name="twitter:domain" content="binbell.com">
+    <style>
+        body, canvas, div {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -khtml-user-select: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+    </style>
+</head>
+<body style="padding:0; margin: 0; background: #000;">
+<script src="res/loading.js"></script>
+<canvas id="gameCanvas" width="480" height="720"></canvas>
+<script>
+    (function () {
+        var nav = window.navigator;
+        var ua = nav.userAgent.toLowerCase();
+        var uaResult = /android (\d+(?:\.\d+)+)/i.exec(ua) || /android (\d+(?:\.\d+)+)/i.exec(nav.platform);
+        if (uaResult) {
+            var osVersion = parseInt(uaResult[1]) || 0;
+            var browserCheck = ua.match(/(qzone|micromessenger|qqbrowser)/i);
+            if (browserCheck) {
+                var gameCanvas = document.getElementById("gameCanvas");
+                var ctx = gameCanvas.getContext('2d');
+                ctx.fillStyle = '#000000';
+                ctx.fillRect(0, 0, 1, 1);
+            }
+        }
+    })();
+</script>
+
+<script cocos src="game.min.js"></script>
+</body>
+</html>
