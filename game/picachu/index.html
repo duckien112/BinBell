@@ -1,0 +1,120 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,minimal-ui">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="expires" content="-1"><title>Classic Onet Picachu - Bin Bell</title>
+<link rel="stylesheet" type="text/css" href="js/m.min.css">
+<link rel="shortcut icon" href="favicon.ico" />
+
+
+<script>
+function alertComingSoon(store) {
+	
+	alert("The game on " + store + " is coming soon. Visit our official site at http://binbell.com and follow us on Twitter, Facebook, Google+ to get more info about all our upcoming titles");
+}
+
+function go_iOS() {
+	//alertComingSoon("iOS");
+	//https://itunes.apple.com/app/id976058006
+	window.location = "https://itunes.apple.com/app/id1131653420";
+	
+}
+
+function go_Android() {
+	//https://play.google.com/store/apps/details?id=com.binbell.kuku
+	window.location = "https://play.google.com/store/apps/details?id=com.binbell.picachu";
+}
+
+function go_Wp8() {
+	//http://www.windowsphone.com/s?appid=39a198d7-7a03-4b01-9a97-389a8a31e726
+	//window.location = "http://goo.gl/JKUUgT";
+}
+if(		navigator.userAgent.match(/Android/i))
+	go_Android();
+else if(navigator.userAgent.match(/iPhone/i)
+	|| navigator.userAgent.match(/iPad/i)
+	|| navigator.userAgent.match(/iPod/i))
+	go_iOS();
+else if(navigator.userAgent.match(/Windows Phone/i))
+	go_Wp8();
+</script>
+
+<meta property="og:title" content="Classic Onet Picachu. Connect animal"/>
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Classic Onet Picachu. Connect animal"/>
+<meta property="og:description" content="Classic Onet Picachu. Connect animal. Very simple and easy to play."/>
+<meta property="og:image" content="http://binbell.com/game/picachu/meta/og_image.png"/>
+
+<meta property="title" content="Classic Onet Picachu. Connect animal"/>
+<meta property="site_name" content="Classic Onet Picachu. Connect animal"/>
+<meta property="description" content="Classic Onet Picachu. Connect animal. Very simple and easy to play."/>
+<meta property="image" content="http://binbell.com/game/picachu/meta/og_image.png"/>
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Classic Onet Picachu. Connect animal">
+<meta name="twitter:description" content="Classic Onet Picachu. Connect animal. Very simple and easy to play.">
+<meta name="twitter:image:src" content="http://binbell.com/game/picachu/meta/og_image.png">
+<meta name="twitter:domain" content="binbell.com">
+<style>
+body{
+	background-color: #111932;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+a:active {  color: #FFFFFF; text-decoration: none}
+a:link {  color: #FFFFFF; text-decoration: none}
+a:visited {  color: #FFFFFF; text-decoration: none}
+a:hover {  color: #17a554}
+
+</style>
+</head>
+<body>
+<table width="300" border="0" align="center" cellpadding="0" cellspacing="0">
+            
+		<tbody>	
+			
+			<tr>
+				<td>
+					<img src="images/banner.png" alt="Kuku Kube" vspace="20">						
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<h2>Classic Onet Picachu. Connect animal. Very simple and easy to play.</h2>						
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<a href='javascript:go_iOS()'>
+						<img src="images/qr_ios.png" alt="Kuku Kube">
+						<h1>iOS</h1>
+					</a>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<a href='javascript:go_Android()'>
+						<img src="images/qr_android.png" alt="Kuku Kube">
+						<h1>Android</h1>
+					</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<div id="copyright" align="center" vspace="20"><a href="http://binbell.com/">© Bin Bell</a></div>
+				</td>
+			</tr>
+				
+        </tbody>
+	</table>
+</body>
+</html>
