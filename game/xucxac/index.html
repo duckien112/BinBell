@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<script>
+function alertComingSoon(a){
+	alert("The game on "+a+" is coming soon. Visit our official site at http://binbell.com and follow us on Twitter, Facebook, Google+ to get more info about all our upcoming titles")
+}
+
+function go_Store() {
+	window.location = "http://binbell.com/game/xucxac/";
+}
+
+function go_iOS() {
+	window.location = "https://itunes.apple.com/app/id934871060";
+}
+
+function go_Android() {
+	//alertComingSoon("Android");
+	window.location = "https://play.google.com/store/apps/details?id=com.binbell.color";
+}
+
+function go_Wp8() {
+	alertComingSoon("Windows Phone");
+}
+if(		navigator.userAgent.match(/Android/i))
+	go_Android();
+else if(navigator.userAgent.match(/iPhone/i)
+	|| navigator.userAgent.match(/iPad/i)
+	|| navigator.userAgent.match(/iPod/i))
+	go_iOS();
+else if(navigator.userAgent.match(/Windows Phone/i))
+	go_Wp8();
+</script>
+
+<title><== & ==> - Bin Bell</title>
+
+<meta name="viewport" content="width=320, target-densitydpi=160dpi, initial-scale=0.65, user-scalable=no, minimal-ui">
+  
+<meta property="og:title" content="Chơi trên iOS và Android"/>
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Chơi trên iOS và Android"/>
+<meta property="og:description" content="Xúc Xắc Bàn Nhậu. Nhậu cùng anh em vui vẻ, thú vị hơn"/>
+<meta property="og:image" content="http://binbell.com/game/xucxac/meta/og_images.png"/>
+
+<meta property="title" content="Chơi trên iOS và Android"/>
+<meta property="site_name" content="Chơi trên iOS và Android"/>
+<meta property="description" content="Xúc Xắc Bàn Nhậu. Nhậu cùng anh em vui vẻ, thú vị hơn"/>
+<meta property="image" content="http://binbell.com/game/xucxac/meta/og_images.png"/>
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Chơi trên iOS và Android">
+<meta name="twitter:description" content="Xúc Xắc Bàn Nhậu. Nhậu cùng anh em vui vẻ, thú vị hơn">
+<meta name="twitter:image:src" content="http://binbell.com/game/xucxac/meta/og_images.png">
+<meta name="twitter:domain" content="binbell.com">
+
+<style>
+body{
+	background-color: #111932;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+a:active {  color: #FFFFFF; text-decoration: none}
+a:link {  color: #FFFFFF; text-decoration: none}
+a:visited {  color: #FFFFFF; text-decoration: none}
+a:hover {  color: #17a554}
+
+</style>
+
+</head>
+<body>
+	<table width="300" border="0" align="center" cellpadding="0" cellspacing="0">
+            
+		<tbody>	
+			
+			<tr>
+				<td>
+					<img src="images/banner.png" alt="<== & ==>" vspace="20">						
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<h2>Xúc Xắc Bàn Nhậu. Nhậu cùng anh em vui vẻ, thú vị hơn</h2>						
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<a href='javascript:go_iOS()'>
+						<img src="images/qr.png" alt="<== & ==>">
+						<h1>Quét mã để tải trên điện thoại</h1>
+					</a>
+				</td>
+			</tr>
+	
+			<tr>
+				<td>
+					<div id="copyright" align="center" vspace="20"><a href="http://binbell.com/">© Bin Bell</a></div>
+				</td>
+			</tr>
+				
+        </tbody>
+	</table>
+</body>
+</html>
